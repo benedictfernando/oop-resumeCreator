@@ -65,12 +65,14 @@
             // generate
             // 
             this.generate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.generate.Enabled = false;
             this.generate.Location = new System.Drawing.Point(145, 3);
             this.generate.Name = "generate";
             this.generate.Size = new System.Drawing.Size(136, 155);
             this.generate.TabIndex = 1;
             this.generate.Text = "Generate Resume";
             this.generate.UseVisualStyleBackColor = true;
+            this.generate.Click += new System.EventHandler(this.generate_Click);
             // 
             // resume
             // 
@@ -79,6 +81,7 @@
             this.ClientSize = new System.Drawing.Size(284, 161);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(300, 200);
             this.Name = "resume";
             this.Text = "C# Resume Creator";
             this.tableLayoutPanel1.ResumeLayout(false);
