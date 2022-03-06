@@ -60,6 +60,7 @@
             this.load.TabIndex = 0;
             this.load.Text = "Load JSON";
             this.load.UseVisualStyleBackColor = true;
+            this.load.Click += new System.EventHandler(this.load_Click);
             // 
             // generate
             // 
